@@ -39,6 +39,13 @@
         class="list-group-item">
         Style me with a better directive!</li>
       </ul>
+      <ul [ngSwitch]="value" class="list-group">
+        <li *ngSwitchCase="5" class="list-group-item">Value is 5</li>
+        <li *ngSwitchCase="10" class="list-group-item">Value is 10</li>
+        <li *ngSwitchCase="100" class="list-group-item">Value is 100</li>
+        <li *ngSwitchDefault class="list-group-item">Value is Default</li>
+
+      </ul>
     </div>
   </div>
 </div>
